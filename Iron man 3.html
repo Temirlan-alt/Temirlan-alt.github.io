@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>KinoLenta</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/kinolenta.css">
+		<script type="text/javascript" src='dist/jquery.fancybox.min.js'></script>
+		<script type="text/javascript" src='js/bootstrap.min.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src='dist/jquery.fancybox.min.js'></script>
+		<link rel="stylesheet" type="text/css" href="dist/jquery.fancybox.min.css">
+	</head>
+	<body>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		    <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			    	<div class='col-md-4 col-md-offset-4'>
+						<h1 style='text-align:center; color:white;'>
+							Registration
+						</h1>
+						<form method='Post' action='register.php'>
+							<div class='form-group'>
+							  	<label for='exampleInputEmail1' style="color:white;">Login</label>
+							  	<input type='text' class='form-control' id='exampleInputEmail1' placeholder='Login' name=login>
+						    </div>
+					   	    <div class='form-group'>
+							  	<label for='exampleInputEmail1' style="color:white;">Email</label>
+							  	<input type='email' class='form-control' id='exampleInputEmail1' placeholder='Email' name='email'>
+							</div>
+					        <div class="form-group">
+					            <label for="exampleInputEmail1" style="color:white;">Phone number</label>
+					            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone number" name="phone">
+					        </div>
+					        <div class="form-group">
+					            <label for="exampleInputPassword1" style="color:white;">Password</label>
+					            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+					        </div>
+					        <div class="form-group">
+					            <label for="exampleInputPassword1" style="color:white;">Name</label>
+					            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Surname" name="name">
+					        </div>
+					        <div class="form-group">
+					            <label for="exampleInputPassword1"style="color:white;">Surname</label>
+					            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Surname" name="surname">
+					        </div>
+							<div class='checkbox'>
+								<label>
+									<input type='checkbox' style="color:orange;">Check me out
+								</label>
+							</div>
+							<button type='submit' class='btn btn-default'>Submit</button>
+						</form>	
+					</div>
+			    </div>
+			</div>
+		</div>
+		<nav class="navbar navbar orange">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <a class="navbar-brand " href="#" style="font-size:50px;">Kinolenta</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			        <ul class="nav nav-tabs danger">
+						<li class="active"><a href="#">Главная<span class="sr-only">(current)</span></a></li>
+					  	<li class="dropdown">
+							<li class="dropdown">
+						      	<a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Новинки<span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+							        <li><a href="#">драмы</a></li>
+							        <li><a href="#">комедий</a></li>
+							        <li><a href="#">детектив</a></li>
+							        <li><a href="#">документальные</a></li>
+							        <li><a href="#">фэнтези</a></li>
+							        <li role="separator" class="divider"></li>
+							        <li><a href="#">совмещенные</a></li>
+						        </ul>
+						    </li>
+						    <li class="dropdown">
+						        <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" role="button"aria-haspopup="true" aria-expanded="false">Фильмы<span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+							        <li><a href="#">дра</a></li>
+							        <li><a href="#">комедий</a></li>
+							        <li><a href="#">детектив</a></li>
+							        <li><a href="#">документальные</a></li>
+							        <li><a href="#">фэнтези</a></li>
+							        <li role="separator" class="divider"></li>
+							        <li><a href="#">совмещенные</a></li>
+						        </ul>
+						    </li>
+						    <li class="dropdown">
+						        <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Мультфильмы<span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+							        <li><a href="#">дра</a></li>
+							        <li><a href="#">комедий</a></li>
+							        <li><a href="#">детектив</a></li>
+							        <li><a href="#">документальные</a></li>
+							        <li><a href="#">фэнтези</a></li>
+							        <li role="separator" class="divider"></li>
+							        <li><a href="#">совмещенные</a></li>
+						        </ul>
+						    </li>
+						    <li class="dropdown">
+						        <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сериалы<span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+							        <li><a href="#">дра</a></li>
+							        <li><a href="#">комедий</a></li>
+							        <li><a href="#">детектив</a></li>
+							        <li><a href="#">документальные</a></li>
+							        <li><a href="#">фэнтези</a></li>
+							        <li role="separator" class="divider"></li>
+							        <li><a href="#">совмещенные</a></li>
+						        </ul>
+						    </li>
+					    </li>
+					    <form class="navbar-form navbar-left" role="search">
+						    <div class="form-group">
+						        <input type="text" class="form-control" placeholder="">
+						    </div>
+						    <button type="submit" class="btn btn-default">Найти</button>
+						</form>
+						<li class="item" type="button" data-toggle="modal" data-target="#myModal"><a href="#">Регистрация<span class="sr-only">(current)</span></a></li>
+						<button type="button" class="btn btn-default btn-lg">Войти</button>
+					</ul>
+			    </div>
+			</div>
+		</nav>
+		<div id="carousel-example-generic" class="p carousel slide col-md-12" data-ride="carousel">
+			<div class="carousel-inner">
+			    <div class="item active">
+			        <img src="img/(2).jpg" alt="...">
+			        <div class="carousel-caption">
+			        
+			        </div>
+			    </div>
+				<div class="item">
+					<img src="img/1.jpg" alt="...">
+					<div class="carousel-caption">
+					    <h1>Не единого фильма</h1>
+		    			<p></p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/(3).jpg" alt="...">
+					<div class="carousel-caption">
+					     <h1>Два Трейлера</h1>
+		    			<p></p> 	
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<div class="wraper def Zhanr col-md-2">
+			<div class="dws">
+				<a href="#" class="butt">Комедия</a>
+				<a href="#" class="butt">Фэнтези</a>
+				<a href="#" class="butt">Боевики</a>
+				<a href="#" class="butt">Приключения</a>
+				<a href="#" class="butt">Драма</a>
+				<a href="#" class="butt">Фантастика</a>
+				<a href="#" class="butt">Криминал</a>
+				<a href="#" class="butt">Семейные</a>
+				<a href="#" class="butt">Триллеры</a>
+				<a href="#" class="butt">Ужасы</a>
+				<a href="#" class="butt">Вестерны</a>
+				<a href="#" class="butt">Спорт</a>
+				<a href="#" class="butt">Исторические</a>
+				<a href="#" class="butt">Биографии</a>
+				<a href="#" class="butt">Мелодрамы</a>
+				<a href="#" class="butt">Сериалы</a>
+				<a href="#" class="butt">Мюзиклы</a>
+				<a href="#" class="butt">Ток-шоу</a>
+				<a href="#" class="butt">button</a>
+			</div>
+		</div>
+		<div class="wraper def Zhanr z col-md-8">
+			<div class="row">
+			  <div class="col-xs-7 col-md-4">
+			    <a class="thumbnail">
+			      <img src="постеры/Iron.jpg" alt="...">
+			    </a>
+			  </div>
+			  ...
+			</div>
+			<div class="panel-group" id="accordion">
+			  	<div class="panel panel-default">
+			    	<div class="panel-heading">
+			      		<h4 class="panel-title">
+			              	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+			                	Пункт Группы Свертывания #1
+			              	</a>
+			            </h4>
+			    	</div>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in">
+				    <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				    </div>
+			    </div>
+			</div>
+
+			<a data-fancybox='gallery' href="img/11.jpg"><img src="img/11.jpg" style='width:100px;'></a>
+			<a data-fancybox='gallery' href="img/12.jpg"><img src="img/12.jpg" style='width:100px;'></a>
+			<a data-fancybox='gallery' href="img/13.jpg"><img src="img/13.jpg" style='width:100px;'></a>
+			<a data-fancybox='gallery' href="img/14.jpg"><img src="img/14.jpg" style='width:100px;'></a>
+			<a data-fancybox='gallery' href="img/15.jpg"><img src="img/15.jpg" style='width:100px;'></a>
+			<a data-fancybox='gallery' href="img/16.jpg"><img src="img/16.jpg" style='width:100px;'></a>
+			<a data-fancybox='gallery' href="img/17.jpg"><img src="img/17.jpg" style='width:100px;'></a>
+			<a data-fancybox='gallery' href="img/18.jpg"><img src="img/18.jpg" style='width:100px;'></a>
+
+			<ul class="nav nav-tabs" id="myTab">
+			  <li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
+			  <li><a href="#profile" data-toggle="tab">Профиль</a></li>
+			  <li><a href="#messages" data-toggle="tab">Сообщения</a></li>
+			  <li><a href="#settings" data-toggle="tab">Настройки</a></li>
+			</ul>
+
+			<div class="tab-content">
+		
+			  <div class="tab-pane" id="messages">йцуке</div>
+			  <div class="tab-pane" id="settings">...</div>
+			</div>
+		</div>
+		<div class="wraper def Zhanr col-md-2"></div>
+	</body>
+</html>
